@@ -86,5 +86,5 @@ jobs:
         # config-files: .github/values/dev.yaml
         chart-path: helm/vprofilecharts
         namespace: default
-        values: appimage=${{ secrets.REGISTRY }}/${{ secrets.ECR_REPOSITORY }}, apptag=${{ secrets.github.run_number }}
+        values: appimage=${{ secrets.REGISTRY }}/${{ secrets.ECR_REPOSITORY }}, apptag=${{ github.run_number }}
         name: vprofile-stack
